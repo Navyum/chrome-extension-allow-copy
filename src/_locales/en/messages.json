@@ -1,0 +1,20 @@
+{
+    "extDescription": {
+       "message": "One-click to bypass restrictions and copy freely."
+    },
+    "extName": {
+       "message": "Allow Copy+"
+    },
+    "popupSubtitle": {
+       "message": "One-click to bypass restrictions and copy freely."
+    },
+    "popupTitle": {
+       "message": "Allow Copy+"
+    },
+    "toggleCopy": {
+       "message": "One-Click Copy"
+    },
+    "toggleDescription": {
+       "message": "Click to toggle on/off"
+    }
+ }

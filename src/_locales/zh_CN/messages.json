@@ -1,0 +1,20 @@
+{
+    "extDescription": {
+       "message": "一键破解网页限制，自由复制粘贴"
+    },
+    "extName": {
+       "message": "允许复制"
+    },
+    "popupSubtitle": {
+       "message": "一键破解网页限制，自由复制粘贴"
+    },
+    "popupTitle": {
+       "message": "允许复制+"
+    },
+    "toggleCopy": {
+       "message": "一键复制"
+    },
+    "toggleDescription": {
+       "message": "点击切换开启/关闭"
+    }
+ }

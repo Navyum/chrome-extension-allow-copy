@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 200px;
+    width: 350px;
+}
+
+.container {
+    padding: 20px;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.header p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.card-container {
+    margin-bottom: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #ffd700;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.toggle-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-input:checked + .toggle-label {
+    background: #4CAF50;
+}
+
+.toggle-input:checked + .toggle-label::before {
+    transform: translateX(30px);
+}
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.footer-link i {
+    margin-right: 5px;
+}
+
+
+/* 禁止文本被选中 */
+.unselectable {
+    -webkit-user-select: none; /* Safari 浏览器 */
+    -moz-user-select: none; /* Firefox 浏览器 */
+    -ms-user-select: none; /* IE/Edge 浏览器 */
+    user-select: none; /* 标准语法 */
+  }
