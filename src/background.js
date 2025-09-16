@@ -66,7 +66,7 @@ browserApi.runtime.onInstalled.addListener((details) =>  {
     });
 
     if (details.reason === browserApi.runtime.OnInstalledReason.INSTALL) {
-        browserApi.runtime.setUninstallURL('https://forms.gle/Qm4ASuPqckZaYpBE9');
+        browserApi.runtime.setUninstallURL('https://forms.gle/yV1r5LYGyxKtKQs46');
     }
 
 });
