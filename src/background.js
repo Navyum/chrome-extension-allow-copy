@@ -51,7 +51,7 @@ function updateIcon(isEnabled) {
 }
 
 // 扩展安装时的初始化
-browserApi.runtime.onInstalled.addListener(function() {
+browserApi.runtime.onInstalled.addListener((details) =>  {
     browserApi.storage.sync.set({copyEnabled: true}, function() {
         console.log(browserApi.i18n.getMessage("extName") + " " + browserApi.i18n.getMessage("installedMessage"));
         
@@ -64,7 +64,13 @@ browserApi.runtime.onInstalled.addListener(function() {
         // 设置初始图标状态
         updateIcon(true);
     });
+
+    if (details.reason === browserApi.runtime.OnInstalledReason.INSTALL) {
+        browserApi.runtime.setUninstallURL('https://forms.gle/Qm4ASuPqckZaYpBE9');
+    }
+
 });
+
 
 // 监听来自popup的消息
 browserApi.runtime.onMessage.addListener(function(request, sender, sendResponse) {
