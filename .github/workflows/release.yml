@@ -27,7 +27,10 @@ jobs:
       
     - name: Build Firefox extension
       run: npm run build:firefox
-      
+
+    - name: Build Edge extension
+      run: npm run build:edge
+
     - name: Create Chrome package
       run: |
         mkdir -p build
